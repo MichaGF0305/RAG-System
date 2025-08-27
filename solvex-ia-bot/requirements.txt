@@ -1,0 +1,20 @@
+# ----- Framework de la API -----
+fastapi
+uvicorn[standard] # Servidor para FastAPI
+
+# ----- Core de IA y LangChain -----
+langchain
+langgraph
+langchain-openai
+sentence-transformers # Para generar embeddings localmente
+
+# ----- Almacén de Vectores -----
+# ChromaDB es una excelente opción: basada en archivos y fácil de usar
+chromadb
+
+# ----- Utilidades -----
+python-dotenv # Para manejar variables de entorno
+
+# ----- Pruebas -----
+pytest
+requests # Para hacer llamadas a nuestra API en las pruebas
