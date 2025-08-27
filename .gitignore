@@ -1,0 +1,14 @@
+# Entornos virtuales
+.venv/
+venv/
+__pycache__/
+
+# Archivos de configuración local
+.env
+*.env
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos de sistema
+.DS_Store
