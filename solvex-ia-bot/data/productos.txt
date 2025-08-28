@@ -1,0 +1,29 @@
+### Producto: Laptop Gamer "NovaCore GFX-10" ###
+Descripción: Una laptop de alto rendimiento diseñada para los gamers más exigentes.
+Especificaciones:
+- CPU: Intel Core i9 de 13ª generación
+- GPU: NVIDIA GeForce RTX 4080
+- RAM: 32GB DDR5
+- Almacenamiento: 2TB NVMe SSD
+- Pantalla: 16 pulgadas, QHD, 240Hz
+Precio: $2500 USD
+Garantía: 2 años de garantía completa en hardware. No cubre daños por software o accidentes.
+
+### Producto: Smartphone "Stellar Pro" ###
+Descripción: El último smartphone con un sistema de cámara revolucionario y una batería que dura todo el día.
+Especificaciones:
+- Procesador: Quantum Fusion A17
+- Cámara: Triple lente de 108MP con zoom óptico 10x
+- Batería: 5000 mAh con carga ultra rápida de 120W
+- Pantalla: 6.7 pulgadas, AMOLED, 120Hz
+Precio: $1200 USD
+Garantía: 1 año de garantía limitada.
+
+### Producto: Auriculares Inalámbricos "AuraSound" ###
+Descripción: Auriculares con cancelación de ruido activa (ANC) para una inmersión total en tu música.
+Especificaciones:
+- Conectividad: Bluetooth 5.3
+- Batería: 8 horas de reproducción con ANC, 30 horas con el estuche de carga.
+- Resistencia al agua: IPX4
+Precio: $150 USD
+Garantía: 6 meses. La garantía no cubre daños por agua o mal uso.
