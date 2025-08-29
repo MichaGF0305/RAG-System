@@ -1,0 +1,9 @@
+### Producto: Webcam "VisionHD Pro" ###
+Descripción: Webcam 1080p con enfoque automático y micrófono estéreo dual para videollamadas y streaming de alta calidad.
+Especificaciones:
+- Resolución: 1080p a 60fps
+- Campo de visión: 78 grados
+- Micrófono: Estéreo con reducción de ruido
+- Conexión: USB-A plug-and-play
+Precio: $70 USD
+Garantía: 1 año de garantía limitada.

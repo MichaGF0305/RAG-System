@@ -1,0 +1,10 @@
+### Producto: Silla Ergonómica "ErgoFlex" ###
+Descripción: Una silla de oficina ergonómica diseñada para el máximo confort durante largas jornadas de trabajo.
+Especificaciones:
+- Soporte lumbar: Ajustable en altura y profundidad.
+- Reposabrazos: 4D (ajustables en 4 direcciones)
+- Material: Malla transpirable en respaldo y asiento.
+- Base: Aluminio reforzado.
+- Peso máximo soportado: 150 kg
+Precio: $450 USD
+Garantía: 5 años en la estructura y 2 años en componentes móviles.

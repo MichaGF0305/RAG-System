@@ -1,0 +1,8 @@
+### Producto: Auriculares Inalámbricos "AuraSound" ###
+Descripción: Auriculares con cancelación de ruido activa (ANC) para una inmersión total en tu música.
+Especificaciones:
+- Conectividad: Bluetooth 5.3
+- Batería: 8 horas de reproducción con ANC, 30 horas con el estuche de carga.
+- Resistencia al agua: IPX4
+Precio: $150 USD
+Garantía: 6 meses. La garantía no cubre daños por agua o mal uso.

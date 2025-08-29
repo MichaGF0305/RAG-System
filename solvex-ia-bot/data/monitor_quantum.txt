@@ -1,0 +1,10 @@
+### Producto: Monitor "QuantumView 4K" ###
+Descripción: Un monitor profesional de 27 pulgadas con resolución 4K UHD y una precisión de color excepcional, ideal para creadores de contenido.
+Especificaciones:
+- Tamaño: 27 pulgadas
+- Resolución: 3840 x 2160 (4K UHD)
+- Panel: IPS con 99% de cobertura Adobe RGB
+- Tasa de refresco: 60Hz
+- Puertos: 2x HDMI 2.0, 1x DisplayPort 1.4, 1x USB-C
+Precio: $750 USD
+Garantía: 3 años de garantía "cero píxeles muertos".
