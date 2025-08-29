@@ -10,6 +10,7 @@ langchain-text-splitters
 sentence-transformers
 langchain-huggingface
 langchain-google-genai
+unstructured[local-inference]
 
 # ----- Almacén de Vectores -----
 chromadb
@@ -21,3 +22,4 @@ python-dotenv
 pytest
 pytest-mock
 requests
+

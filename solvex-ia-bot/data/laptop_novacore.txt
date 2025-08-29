@@ -1,0 +1,10 @@
+### Producto: Laptop Gamer "NovaCore GFX-10" ###
+Descripción: Una laptop de alto rendimiento diseñada para los gamers más exigentes.
+Especificaciones:
+- CPU: Intel Core i9 de 13ª generación
+- GPU: NVIDIA GeForce RTX 4080
+- RAM: 32GB DDR5
+- Almacenamiento: 2TB NVMe SSD
+- Pantalla: 16 pulgadas, QHD, 240Hz
+Precio: $2500 USD
+Garantía: 2 años de garantía completa en hardware. No cubre daños por software o accidentes.

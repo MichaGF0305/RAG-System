@@ -1,9 +1,13 @@
 # src/main.py
+
 from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from langgraph.graph import StateGraph, END
 import logging
 
-# Importamos nuestras nuevas definiciones de estado y agentes
+# --- IMPORTACIONES RELATIVAS CORREGIDAS ---
+# Le decimos a Python que busque estos módulos en el mismo paquete (directorio 'src')
 from .models import QueryRequest, QueryResponse
 from .state import AgentState
 from .agents import retriever_node, responder_node
@@ -12,55 +16,40 @@ from .agents import retriever_node, responder_node
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# --- 1. Construcción del Grafo de Agentes ---
-
-# Creamos una nueva instancia del grafo, especificando cuál es nuestro objeto de estado
+# --- Construcción del Grafo de Agentes ---
 workflow = StateGraph(AgentState)
-
-# Añadimos los nodos al grafo. Cada nodo es un agente (una función)
 workflow.add_node("retriever", retriever_node)
 workflow.add_node("responder", responder_node)
-
-# Definimos el flujo de trabajo (las conexiones entre nodos)
-workflow.set_entry_point("retriever") # El primer nodo en ejecutarse es el recuperador
-workflow.add_edge("retriever", "responder") # Después del recuperador, se ejecuta el respondedor
-workflow.set_finish_point("responder") # El respondedor es el último nodo
-
-# Compilamos el grafo en un objeto ejecutable
+workflow.set_entry_point("retriever")
+workflow.add_edge("retriever", "responder")
+workflow.set_finish_point("responder")
 graph = workflow.compile()
+logger.info("Grafo de agentes compilado exitosamente.")
 
-
-# --- 2. Inicialización de la Aplicación FastAPI ---
-
+# --- Inicialización de la Aplicación FastAPI ---
 app = FastAPI(
     title="Solvex IA Product Bot (Multi-Agent)",
-    description="Un microservicio con una arquitectura multi-agente usando LangGraph.",
-    version="1.0.1"
+    description="Un microservicio con una arquitectura multi-agente que incluye una interfaz de chat.",
+    version="1.2.0" # Versión limpia
 )
 
-# --- 3. Definición del Endpoint de la API ---
+# --- Configuración para Servir la Interfaz de Chat ---
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
+@app.get("/", response_class=FileResponse)
+async def read_index():
+    return "static/index.html"
+
+# --- Definición del Endpoint de la API ---
 @app.post("/query", response_model=QueryResponse)
 def handle_query(request: QueryRequest):
-    """
-    Recibe una consulta, la procesa con el grafo de agentes
-    y devuelve la respuesta final.
-    """
     logger.info(f"Recibida consulta del usuario '{request.user_id}': '{request.query}'")
-    
-    # El input para el grafo es un diccionario que coincide con la estructura del estado inicial
     initial_state = {"query": request.query}
-    
     try:
-        # Invocamos el grafo con el estado inicial
         final_state = graph.invoke(initial_state)
-        final_answer = final_state["answer"]
+        final_answer = final_state.get("answer", "No se pudo generar una respuesta.")
         logger.info(f"Respuesta generada: '{final_answer}'")
         return QueryResponse(answer=final_answer)
     except Exception as e:
-        logger.error(f"Error al procesar la consulta con el grafo: {e}")
+        logger.error(f"Error al procesar la consulta con el grafo: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Ocurrió un error al procesar la consulta.")
-
-@app.get("/", summary="Endpoint de salud")
-def read_root():
-    return {"status": "ok", "message": "Bienvenido al Bot Multi-Agente de Solvex IA"}

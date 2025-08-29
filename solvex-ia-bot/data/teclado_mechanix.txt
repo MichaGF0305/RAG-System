@@ -1,0 +1,9 @@
+### Producto: Teclado Mecánico "Mechanix Prime" ###
+Descripción: Un teclado mecánico robusto con switches Cherry MX Brown, retroiluminación RGB personalizable y reposamuñecas magnético.
+Especificaciones:
+- Switches: Cherry MX Brown (táctiles, silenciosos)
+- Layout: Completo (104 teclas) en español.
+- Conectividad: Cable USB-C trenzado extraíble.
+- Software: Compatible con software de personalización para macros y RGB.
+Precio: $180 USD
+Garantía: 1 año en todos los componentes.

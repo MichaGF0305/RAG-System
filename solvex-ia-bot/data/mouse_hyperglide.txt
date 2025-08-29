@@ -1,0 +1,9 @@
+### Producto: Mouse Gamer "HyperGlide" ###
+Descripción: Un mouse ultraligero diseñado para la velocidad y precisión en juegos competitivos.
+Especificaciones:
+- Peso: 60 gramos
+- Sensor: Óptico de 20,000 DPI
+- Botones: 6 botones programables
+- Conectividad: Inalámbrico de baja latencia (2.4GHz) o cable USB-C.
+Precio: $90 USD
+Garantía: 1 año.
